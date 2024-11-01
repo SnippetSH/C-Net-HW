@@ -22,7 +22,9 @@ bin/
 /nbdist/
 /.nb-gradle/
 
-*/static
+*/static/
+*/data.json
+*/*.jar
 
 ### VS Code ###
 .vscode/
