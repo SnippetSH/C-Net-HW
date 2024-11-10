@@ -1,3 +1,5 @@
+package helper;
+
 import java.io.*;
 import java.nio.*;
 import java.util.*;
@@ -46,6 +48,9 @@ public class JsonFileHandler {
                     break;
                 }
             }
+        } catch (FileNotFoundException e) {
+            writeJson(filePath, "", "");
+            return null;
         } catch (Exception e) {
             System.out.println("An error occurred during reading file." + e.getMessage());
         }
@@ -57,7 +62,6 @@ public class JsonFileHandler {
         Map<String, String> result = new HashMap<>();
 
         json = json.trim();
-        System.out.println(json);
         if (json.equals("{}")) {
             return Collections.emptyMap();
         }

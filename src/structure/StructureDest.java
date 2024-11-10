@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package structure;
 
 public class StructureDest {
     private String name;
