@@ -31,3 +31,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+.idea/
+static/
+*.json
+*.jar
+*.iml
